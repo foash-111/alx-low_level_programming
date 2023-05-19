@@ -12,9 +12,9 @@ int main(void)
 {
 	int n, j;
 
-	for (n = 49 ; n <= 57 ; n++)
+	for (n = 48 ; n <= 57 ; n++)
 	{
-	for (j = 50 ; j <= 57 ; j++)
+	for (j = 49 ; j <= 57 ; j++)
 	{
 	if (j > n)
 	{
