@@ -10,15 +10,13 @@
 
 int main(void)
 {
-	int i, n, j;
+	int n, j;
 
-	for (i = 48 ; i <= 57 ; i++)
-	{
 	for (n = 49 ; n <= 57 ; n++)
 	{
 	for (j = 50 ; j <= 57 ; j++)
 	{
-	if (n >= j
+	if (j > n)
 	{
 	putchar(n);
 	putchar(j);
@@ -29,7 +27,6 @@ int main(void)
 	}
 	else
 	continue;
-	}
 	}
 	}
 	putchar('\n');
