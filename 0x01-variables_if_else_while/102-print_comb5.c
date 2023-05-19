@@ -16,9 +16,9 @@ int main(void)
 	{
 	for (j = 48 ; j <= 57 ; j++)
 	{
-	for (k = i ; k <= 57 ; k++)
+	for (k = 48 ; k <= 57 ; k++)
 	{
-	for (l = j + 1 ; l <= 57 ; l++)
+	for (l = 48 ; l <= 57 ; l++)
 	{
 	if (i * 10 + j < k * 10 + l)
 	{
