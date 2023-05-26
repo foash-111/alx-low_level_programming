@@ -2,14 +2,11 @@
 #include <stdio.h>
 
 /**
- * main - Entry point
+ * _isupper - checks if a character is uppercase
+ * @c: the character to check
  *
- * Description: A C program that prints with function _isupper
- *
- * Return: Always 0 (Success)
-*/
-
-/* function declaration */
+ * Return: 1 if the character is uppercase, 0 otherwise
+ */
 
 int _isupper(int c)
 {
@@ -18,6 +15,15 @@ int _isupper(int c)
 	else
 		return (0);
 }
+
+/**
+ * main - Entry point for the program
+ *
+ * This function checks if a character is uppercase and prints the result.
+ * It takes no arguments and returns 0 on success.
+ *
+ * Return: 0 on success
+ */
 
 int main(void)
 {
