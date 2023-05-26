@@ -7,7 +7,7 @@
  *
  * Return: the product of the two integers
  *
- * Description: This function takes two integers as input and returns product.
+ * Description: This function takes two integers as input and returns product.3-print_numbers.c
  */
 
 
