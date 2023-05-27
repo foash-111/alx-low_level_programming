@@ -16,13 +16,14 @@ for (i = 0 ; i < 10 ; i++)
 {
 for (j = 0 ; j < n - 1 ; j++)
 {
-putchar(' ');
+_putchar(' ');
 }
 for (k = 0 ; k <= i ; k++)
 {
-putchar('#');
+_putchar('#');
 }
-putchar('\n');
+_putchar('\n');
 n--;
 }
+_putchar('\n')
 }
