@@ -1,5 +1,8 @@
+<<<<<<< HEAD
 #include <stdlib.h>
 #include <time.h>
+=======
+>>>>>>> ba4c8ee9d8e42989b28ba6710cbc81077e50adc5
 #include <stdio.h>
 
 /**
@@ -18,9 +21,13 @@ int main(void)
 	{
 	for (j = 49 ; j <= 57 ; j++)
 	{
+<<<<<<< HEAD
 	if (n >= j)
 	continue;
 	else
+=======
+	if (j > n)
+>>>>>>> ba4c8ee9d8e42989b28ba6710cbc81077e50adc5
 	{
 	putchar(n);
 	putchar(j);
@@ -29,6 +36,11 @@ int main(void)
 	putchar(',');
 	putchar(' ');
 	}
+<<<<<<< HEAD
+=======
+	else
+	continue;
+>>>>>>> ba4c8ee9d8e42989b28ba6710cbc81077e50adc5
 	}
 	}
 	putchar('\n');
