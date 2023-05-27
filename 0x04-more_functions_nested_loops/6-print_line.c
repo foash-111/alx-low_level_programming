@@ -15,10 +15,10 @@ int i;
 
 if (n > 0)
 {
-for (i = 0 ; i < n ; i++)
-{
-putchar(45);
-}
+	for (i = 0 ; i < n ; i++)
+	{
+	putchar(95);
+	}
 }
 putchar (36);
 putchar('\n');
