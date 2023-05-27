@@ -10,11 +10,12 @@
 
 void print_triangle(int n)
 {
-int i, j, k;
+int i, j, k, l;
 
+l = n;
 for (i = 0 ; i < n ; i++)
 {
-for (j = 0 ; j < n - 1 ; j++)
+for (j = 0 ; j < l - 1 ; j++)
 {
 _putchar(' ');
 }
@@ -23,7 +24,7 @@ for (k = 0 ; k <= i ; k++)
 _putchar('#');
 }
 _putchar('\n');
-n--;
+l--;
 }
 _putchar('\n');
 }
