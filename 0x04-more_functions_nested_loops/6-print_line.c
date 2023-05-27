@@ -20,6 +20,5 @@ if (n > 0)
 	putchar(95);
 	}
 }
-putchar (36);
 putchar('\n');
 }
