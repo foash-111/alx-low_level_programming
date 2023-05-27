@@ -36,5 +36,6 @@ else
 printf("%d ", j);
 }
 }
+_putchar('\n');
 return (0);
 }
