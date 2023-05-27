@@ -12,23 +12,19 @@ void more_numbers(void)
 {
 	int i, j, k;
 
-	for (k = 48 ; k <= 57 ; k++)
+	for (i = 0 ; i < 9 ; i++)
 	{
-	for (i = 48 ; i <= 49 ; i++)
+	for (j = 0 ; j <= 14 ; j++)
 	{
-	for (j = 48 ; j <= 57 ; j++)
-	{
-	if (i == 48)
-	_putchar(j);
-	else
-	{
-	_putchar(i);
-	_putchar(j);
-	if (j == 52)
-	break;
+		k = j;
+		if (j > 9)
+		{
+		_putchar(49);
+		k = j % 10;
+		}
+		_putchar(k + 48);
+
 	}
-	}
-	}
-	_putchar('\n');
+	 _putchar('\n');
 	}
 }
