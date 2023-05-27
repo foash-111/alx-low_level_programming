@@ -1,20 +1,15 @@
 #include <stdio.h>
 
 /**
- * Fizz_Buzz_test - is a simple program that prints numbers from 1 to n
+ * main - Entry point
  *
- * For multiples of 3, it prints "Fizz" instead of the number
+ * Description: A C program that prints with print function
  *
- * for multiples of 5, it prints "Buzz".
- *
- * For multiples of both 3 and 5, it prints "FizzBuzz".
- *
- * @return None.
+ * Return: Always 0 (Success)
 */
 
-void Fizz_Buzz_test(void)
+int main(void)
 {
-
 int j;
 
 for (j = 1 ; j <= 100 ; j++)
@@ -41,18 +36,5 @@ else
 printf("%d ", j);
 }
 }
-}
-
-/**
- * main - Entry point
- *
- * Description: A C program that prints with print function
- *
- * Return: Always 0 (Success)
-*/
-
-int main(void)
-{
-Fizz_Buzz_test();
 return (0);
 }
