@@ -10,7 +10,7 @@
 
 void more_numbers(void)
 {
-	int i, j;
+	int i, j, k;
 
 	for (k = 48 ; k <= 57 ; k++)
 	{
