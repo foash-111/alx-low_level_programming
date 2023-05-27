@@ -12,6 +12,8 @@ void more_numbers(void)
 {
 	int i, j;
 
+	for (k = 48 ; k <= 57 ; k++)
+	{
 	for (i = 48 ; i <= 49 ; i++)
 	{
 	for (j = 48 ; j <= 57 ; j++)
@@ -28,4 +30,5 @@ void more_numbers(void)
 	}
 	}
 	_putchar('\n');
+	}
 }
