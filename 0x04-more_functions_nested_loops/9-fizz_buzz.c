@@ -26,10 +26,10 @@ else if (j % 5 == 0)
 {
 if (j == 100)
 {
-printf("Bizz");
+printf("Buzz");
 break;
 }
-printf("Bizz ");
+printf("Buzz ");
 }
 else
 {
