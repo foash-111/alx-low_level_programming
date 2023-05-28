@@ -5,11 +5,11 @@
  *
  * @number: the numer we want to return the large prime factor to it
  *
- * Return: the large prime factor
+ * Return: none
  *
 */
 
-int larg_prime(long long number)
+void larg_prime(long long number)
 {
 int larger = 0;
 
@@ -39,7 +39,7 @@ if (larger < 2)
 {
 larger = number;
 }
-return (larger);
+printf("%d\n", larger);
 }
 
 /**
@@ -52,6 +52,6 @@ return (larger);
 
 int main(void)
 {
-printf("%d\n", larg_prime(612852475143));
+larg_prime(612852475143);
 return (0);
 }
