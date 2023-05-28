@@ -2,14 +2,16 @@
 
 /**
  * _abs - checks digit
- * @n: the intger to check
+ * @int: the intger to check
  *
  *
- * Return: positive value of n.
+ * Return: positive value of int.
 */
 
-int _abs(int n)
+int _abs(int)
 {
+	int n;
+
 if (n > 0)
 {
 printf("%d", n);
