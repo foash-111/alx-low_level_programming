@@ -14,15 +14,14 @@ int _abs(int)
 
 if (n > 0)
 {
-printf("%d", n);
+return (n);
 
 }
 else if (n == 0)
 {
-printf("%d", n);
+return (n);
 }
 else
 {
-n = n * -1;
-printf("%d", n);
+return (-n);
 }
