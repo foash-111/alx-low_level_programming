@@ -1,19 +1,17 @@
 #include "main.h"
 
 /**
- * _abs - checks digit
+ * _abs -  computes the absolute value of an integer.
  * @n: the intger to check
  *
  *
- * Return: positive value of int n.
+ * Return: n.
 */
 
 int _abs(int n)
 {
-
 if (n < 0)
 {
-n = -1 * n;
+n = (-1) * n;
 }
 return (n);
-
