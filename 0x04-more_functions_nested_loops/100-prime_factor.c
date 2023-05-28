@@ -9,9 +9,9 @@
  *
 */
 
-void larg_prime(long long number)
+void larg_prime(long number)
 {
-int larger = 0;
+int larger = 0, i;
 
 while (number % 2 == 0)
 {
@@ -23,7 +23,8 @@ while (number % 3 == 0)
 number = number / 3;
 larger = 3;
 }
-for (int i = 5 ; i <= 5000 ; i += 2)
+
+for (i = 5 ; i <= 5000 ; i += 2)
 {
 while (number % i == 0)
 {
