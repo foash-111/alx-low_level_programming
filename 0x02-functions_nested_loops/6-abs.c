@@ -2,15 +2,14 @@
 
 /**
  * _abs - checks digit
- * @int: the intger to check
+ * @n: the intger to check
  *
  *
- * Return: positive value of int.
+ * Return: positive value of int n.
 */
 
-int _abs(int)
+int _abs(int n)
 {
-	int n;
 
 if (n > 0)
 {
