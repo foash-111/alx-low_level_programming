@@ -8,16 +8,15 @@
  * @argc: first argument to show the number of commands
  * argc = arg command
  *
- * @argv: second argument to show argument array
- * argv = arg vector or `array`
- *
+ * @argv:second parameter
  * Return: Always 0 (Success)
 */
 
 int main(int argc, char const *argv[])
 {
 
-printf("%d\n", argc);
+
+printf("%d\n", argc - 1);
 
 return (0);
 }
