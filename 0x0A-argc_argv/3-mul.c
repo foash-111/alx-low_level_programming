@@ -22,7 +22,7 @@ num2 = atoi(argv[2]);
 if (argc == 3)
 {
 
-mul = num1 * num2;
+mul = num1 *num2;
 
 printf("%d\n", mul);
 }
