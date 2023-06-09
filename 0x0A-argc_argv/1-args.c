@@ -12,9 +12,9 @@
  * Return: Always 0 (Success)
 */
 
-int main(int argc, char const *argv[])
+int main(int argc, const char *argv[])
 {
-
+	void(argv);
 
 printf("%d\n", argc - 1);
 
