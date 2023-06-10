@@ -1,5 +1,7 @@
 #include<stdio.h>
 #include<stdlib.h>
+#include<string.h>
+
 /**
  * main - Entry point
  *
@@ -14,8 +16,9 @@
 
 int main(int argc, char *argv[])
 {
-int count, sum = 0;
+unsigned int count, i, sum = 0;
 
+char *e;
 if (argc == 1)
 {
 printf("0\n");
@@ -24,18 +27,26 @@ else
 {
 for (count = 1; count < argc; count++)
 {
-	if (atoi(argv[count]) >= 0 && atoi(argv[count]) <= 9)
+	e = argv[count];
+
+	for (i = 0; i < strlen(e); i++)
 	{
-	sum += atoi(argv[count]);
-	}
-	else
+	if (e[i] < 48 || e[i] > 57)
 	{
 	printf("Error\n");
 	return (1);
 	}
+	}
+
+	sum += atoi(e);
+	e++;
 
 }
+
 printf("%d\n", sum);
+
+
 }
+
 return (0);
 }
