@@ -22,17 +22,17 @@ size2 = 0;
 i = 0;
 while (1)
 {
-size1++;
 if (*(s1 + i) == '\0')
 {break; }
+size1++;
 i++;
 }
 i = 0;
 while (1)
 {
+size2++;
 if (*(s2 + i) == '\0')
 {break; }
-size2++;
 i++; }
 ptr = malloc(sizeof(char) * (size1 + size2));
 if (ptr == 0 || (size1 + size2) == 0)
