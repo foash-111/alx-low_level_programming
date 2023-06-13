@@ -39,7 +39,7 @@ return (0);
 }
 
 
-while (i <= size)
+while (i < size)
 {
 ptr[i] = str[i];
 i++;
