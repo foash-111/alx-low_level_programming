@@ -38,6 +38,7 @@ if (ptr == 0 || size == 0)
 return (0);
 }
 
+i = 0;
 
 while (i < size)
 {
