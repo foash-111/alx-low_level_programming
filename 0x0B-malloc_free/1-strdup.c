@@ -19,7 +19,7 @@ size = 0;
 i = 0;
 if (str == NULL)
 {
-ptr == NULL;
+ptr = NULL;
 return (ptr);
 }
 while (1)
