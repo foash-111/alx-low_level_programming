@@ -47,7 +47,7 @@ while (i < (size1 + size2))
 if (i < size1)
 ptr[i] = s1[i];
 else
-ptr[i] = s1[i - size2];
+ptr[i] = s2[i - size1];
 i++;
 }
 return (ptr);
