@@ -20,6 +20,10 @@ char *ptr;
 size1 = 0;
 size2 = 0;
 i = 0;
+if (s1 == NULL)
+s1 = "";
+if (s2 == NULL)
+s2 = "";
 while (1)
 {
 if (*(s1 + i) == '\0')
