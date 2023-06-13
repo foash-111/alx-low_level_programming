@@ -20,7 +20,7 @@ i = 0;
 j = 0;
 
 
-ptr = malloc(sizeof(int) * (width + height));
+ptr = malloc(sizeof(int) * (width * height));
 if (ptr == 0 || width <= 0 || height <= 0)
 {return (0); }
 
