@@ -18,7 +18,7 @@ int _strlen(char *str)
 while (1)
 {
 if (*(str + i) == '\0')
-{	
+{
 	break;
 }
 
@@ -57,7 +57,7 @@ size1 = _strlen(s1);
 size2 = _strlen(s2);
 
 if (n < size2)
-{	
+{
 	j = (size1 + n);
 	ptr = malloc(sizeof(char) * (size1 + n + 1));
 }
