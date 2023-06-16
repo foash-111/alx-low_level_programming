@@ -60,20 +60,20 @@ size2 = _strlen(s2);
 if (n < size2)
 {
 	j = (size1 + n + 1);
-	ptr = malloc(sizeof(char) * (size1 + n + 1));
+	ptr = malloc(sizeof(char) * j);
 }
 	else
 {
 	j = (size1 + size2 + 1);
-	ptr = malloc(sizeof(char) * (size1 + size2 + 1));
+	ptr = malloc(sizeof(char) * j);
 }
-	if (ptr == 0 || j == 0)
+	if (ptr == 0)
 {return (0); }
 i = 0;
 
 while (i < j - 1)
 {
-if (i < size1)
+if (i <= size1)
 ptr[i] = s1[i];
 else
 ptr[i] = s2[i - size1];
