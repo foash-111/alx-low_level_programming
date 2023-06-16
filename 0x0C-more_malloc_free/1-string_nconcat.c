@@ -59,16 +59,16 @@ size2 = _strlen(s2);
 
 if (n < size2)
 {
-	j = (size1 + n);
+	j = (size1 + n + 1);
 	ptr = malloc(sizeof(char) * j);
 }
 	else
 {
-	j = (size1 + size2);
+	j = (size1 + size2 + 1);
 	ptr = malloc(sizeof(char) * j);
 }
 	if (ptr == 0)
-{return (0); }
+		{return (0); }
 i = 0;
 
 while (i < j)
