@@ -70,7 +70,10 @@ if (n < size2)
 	if (ptr == 0)
 		{return (0); }
 i = 0;
-
+if (j == 1)
+	continue;
+else
+{
 while (i < j - 1)
 {
 if (i < size1)
@@ -78,6 +81,7 @@ ptr[i] = s1[i];
 else
 ptr[i] = s2[i - size1];
 i++;
+}
 }
 ptr[i] = '\0';
 return (ptr);
