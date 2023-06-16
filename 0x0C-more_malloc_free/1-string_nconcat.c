@@ -71,7 +71,7 @@ if (n < size2)
 		{return (0); }
 i = 0;
 
-while (i < j)
+while (i < j - 1)
 {
 if (i < size1)
 ptr[i] = s1[i];
