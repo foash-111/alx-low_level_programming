@@ -59,19 +59,19 @@ size2 = _strlen(s2);
 
 if (n < size2)
 {
-	j = (size1 + n + 1);
+	j = (size1 + n);
 	ptr = malloc(sizeof(char) * j);
 }
 	else
 {
-	j = (size1 + size2 + 1);
+	j = (size1 + size2);
 	ptr = malloc(sizeof(char) * j);
 }
 	if (ptr == 0)
 {return (0); }
 i = 0;
 
-while (i < j - 1)
+while (i < j)
 {
 if (i < size1)
 ptr[i] = s1[i];
