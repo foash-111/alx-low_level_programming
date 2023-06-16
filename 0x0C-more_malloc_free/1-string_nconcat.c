@@ -73,7 +73,7 @@ i = 0;
 
 while (i < j - 1)
 {
-if (i <= size1)
+if (i < size1)
 ptr[i] = s1[i];
 else
 ptr[i] = s2[i - size1];
