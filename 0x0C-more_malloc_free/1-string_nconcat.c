@@ -71,7 +71,7 @@ if (n < size2)
 		{return (0); }
 i = 0;
 if (j == 1)
-	continue;
+	j = j;
 else
 {
 while (i < j - 1)
