@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * strlen - calc length
+ * _strlen - calc length
  *
  *@str:address of the array
  *
