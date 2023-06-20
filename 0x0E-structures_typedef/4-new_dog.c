@@ -14,8 +14,8 @@ char *_strcpy(char *dest, char *src);
 */
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	dog_t *max_dog;
-	int name_l = 0, own_l = 0;
+dog_t *max_dog;
+int name_l = 0, own_l = 0;
 
 if (name != NULL && owner != NULL)
 {
