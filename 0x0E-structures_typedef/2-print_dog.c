@@ -12,32 +12,31 @@
 
 void print_dog(struct dog *d)
 {
-struct dog my_dog;
 
-my_dog = d;
+
 
 if (d == NULL)
-printf("");
+putchar('\0');
 else
 
 {
-if (my_dog->name == NULL)
+if (d->name == NULL)
 printf("(nil)");
 else
 {
-printf("Name: %s\n", my_dog->name);
+printf("Name: %s\n", d->name);
 }
-if (my_dog->age == NULL)
+if (d->age == 0)
 printf("(nil)");
 else
 {
-printf("Age: %d\n", my_dog->age);
+printf("Age: %f\n", d->age);
 }
-if (my_dog->owner == NULL)
+if (d->owner == NULL)
 printf("(nil)");
 else
 {
-printf("Owner: %s\n", my_dog->owner);
+printf("Owner: %s\n", d->owner);
 }
 }
 }
