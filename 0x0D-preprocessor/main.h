@@ -3,7 +3,7 @@
 
 #ifndef SIZE
 #define SIZE 1024
-
+#endif
 #include <stdio.h>
 
 int _putchar(char c);
