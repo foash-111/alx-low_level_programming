@@ -15,9 +15,6 @@ void print_dog(struct dog *d)
 
 
 
-if (d == NULL)
-putchar('\0');
-else
 
 {
 if (d->name == NULL)
@@ -26,9 +23,7 @@ else
 {
 printf("Name: %s\n", d->name);
 }
-if (d->age == 0)
-printf("(nil)");
-else
+
 {
 printf("Age: %f\n", d->age);
 }
