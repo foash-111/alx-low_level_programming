@@ -22,13 +22,14 @@ return (NULL);
 temp->str = strdup(str);
 temp->len = _strlen(str);
 temp->next = *head;
+/*not points to head but points to what the head points to*/
 
 *head = temp;
 
-return (temp);
+return (*head);
 }
-
-return (0);
+else
+return(NULL);
 }
 
 /**
