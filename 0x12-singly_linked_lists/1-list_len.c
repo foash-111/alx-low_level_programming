@@ -14,9 +14,9 @@ size_t count = 0;
 
 while (h)
 {
-h = h->next;
 count++;
-}
+h = h->next;
 
+}
 return (count);
 }
