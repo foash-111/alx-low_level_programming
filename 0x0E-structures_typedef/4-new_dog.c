@@ -17,7 +17,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 dog_t *max_dog;
 int name_l = 0, own_l = 0;
 
-if (name != NULL && owner != NULL)
+	if (name != NULL && owner != NULL)
 {
 		name_l = _strlen(name) + 1;
 		own_l = _strlen(owner) + 1;
