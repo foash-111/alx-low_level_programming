@@ -29,7 +29,7 @@ temp->next = *head;
 return (*head);
 }
 else
-return(NULL);
+return (NULL);
 }
 
 /**
