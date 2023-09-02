@@ -22,7 +22,7 @@ if (start > end)
 if (square == n)
 	return (mid);
 if (square > n)/*169 > 25*/
-	return (_sqrt_recursion_helper(n, 1, mid - 1));
+	return (_sqrt_recursion_helper(n, start, mid - 1));
 if (square < n)/*16 < 25*/
 	return (_sqrt_recursion_helper(n, mid + 1, end));
 return (-1);
