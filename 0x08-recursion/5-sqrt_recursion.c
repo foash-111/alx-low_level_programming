@@ -18,7 +18,7 @@ return (-1);
 if (root * root == n)
 return (root);
 
-if (square < n)
+if (root * root < n)
 return (_sqrt_recursion_helper(n, root + 1));
 return (-1);
 }
