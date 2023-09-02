@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- *is_prime_number - check if the number is prime
+ *prime_helper - check if the number is prime
  *@n: the nume we will check
  *@start: start often with 3
  *Return: 1 on success 0 otherwise
