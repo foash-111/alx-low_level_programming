@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- *_sqrt_recursion_helper - help
+ *_sqrt_helper - help
  *
  *@n: number we need the square
  *@root: increase from 1
@@ -11,7 +11,7 @@
  */
 
 
-int _sqrt_recursion_helper(int n, int root)
+int _sqrt_helper(int n, int root)
 {
 if (root * root > n)
 return (-1);
@@ -19,7 +19,7 @@ if (root * root == n)
 return (root);
 
 if (root * root < n)
-return (_sqrt_recursion_helper(n, root + 1));
+return (_sqrt_helper(n, root + 1));
 return (-1);
 }
 
@@ -40,7 +40,7 @@ else if (n < 0)
 	return (-1);
 else
 {
-return (_sqrt_recursion_helper(n, 1));
+return (_sqrt_helper(n, 1));
 }
 
 }
