@@ -4,27 +4,22 @@
  *_sqrt_recursion_helper - help
  *
  *@n: number we need the square
- *@start: the start point
- *@end: the end point
+ *@root: increase from 1
  *
  *Return: the result//the square root;
  *
  */
 
 
-int _sqrt_recursion_helper(int n, int start, int end)
+int _sqrt_recursion_helper(int n, int root)
 {
-int mid = start + (end - start) / 2;
-int square = mid * mid;
+if (root * root > n)
+return (-1);
+if (root * root == n)
+return (root);
 
-if (start > end)
-	return (-1);
-if (square == n)
-	return (mid);
-if (square > n)/*169 > 25*/
-	return (_sqrt_recursion_helper(n, start, mid - 1));
-if (square < n)/*16 < 25*/
-	return (_sqrt_recursion_helper(n, mid + 1, end));
+if (square < n)
+return (_sqrt_recursion_helper(n, root + 1));
 return (-1);
 }
 
@@ -45,7 +40,7 @@ else if (n < 0)
 	return (-1);
 else
 {
-return (_sqrt_recursion_helper(n, 1, n));
+return (_sqrt_recursion_helper(n, 1));
 }
-return (-1);
+
 }
