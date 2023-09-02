@@ -45,6 +45,6 @@ else if (n < 1)
 	return (-1);
 else
 {
-return (_sqrt_recursion_helper(n, 1, n));
+return (_sqrt_recursion_helper(n, 1, n / 2));
 }
 }
