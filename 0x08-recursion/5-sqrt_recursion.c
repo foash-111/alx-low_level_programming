@@ -41,10 +41,11 @@ int _sqrt_recursion(int n)
 {
 if (n == 0 || n == 1)
 	return (n);
-else if (n < 1)
+else if (n < 0)
 	return (-1);
 else
 {
-return (_sqrt_recursion_helper(n, 1, n / 2));
+return (_sqrt_recursion_helper(n, 1, n));
 }
+return (-1);
 }
