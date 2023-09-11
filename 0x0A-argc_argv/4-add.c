@@ -1,5 +1,6 @@
 #include"stdio.h"
 #include"stdlib.h"
+#include <string.h>
 
 /**
  * main - entry point
@@ -14,21 +15,32 @@ int main(int argc, char *argv[])
 
 int i = 1;
 int sum = 0;
+char *ptr;
 
 while (i < argc)
 {
 
-if (!((int) *argv[i] < 48  && (int) *argv[i] > 57))
-{
-sum += atoi(argv[i]);
-i++;
-}
-else
-{
-printf("Error\n");
+	int check = strlen(argv[i]);
 
-return (1);
-}
+	ptr = argv[i];
+
+	while (--check)
+	{
+	if (ptr[check] < 48 &&  ptr[check] > 57)
+	{
+		printf("Error\n");
+
+		return (1);
+	}
+	else
+	{
+		sum += atoi(argv[i]);
+		i++;
+	}
+
+
+	}
+
 }
 
 printf("%d\n", sum);
