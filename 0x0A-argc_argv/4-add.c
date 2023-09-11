@@ -36,9 +36,10 @@ while (i < argc)
 	{
 		sum += atoi(argv[i]);
 	}
-i++;
 
 	}
+
+i++;
 
 }
 
