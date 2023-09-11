@@ -21,12 +21,12 @@ while (i < argc)
 {
 
 	int check = strlen(argv[i]);
-
+int j = 0;
 	ptr = argv[i];
 
-	while (--check)
+	while (j < check)
 	{
-	if (ptr[check] < 48 &&  ptr[check] > 57)
+	if (ptr[j] < 48 &&  ptr[j] > 57)
 	{
 		printf("Error\n");
 
@@ -36,7 +36,7 @@ while (i < argc)
 	{
 		sum += atoi(argv[i]);
 	}
-
+j++;
 	}
 
 i++;
