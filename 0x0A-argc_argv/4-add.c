@@ -35,9 +35,8 @@ while (i < argc)
 	else
 	{
 		sum += atoi(argv[i]);
-		i++;
 	}
-
+i++;
 
 	}
 
