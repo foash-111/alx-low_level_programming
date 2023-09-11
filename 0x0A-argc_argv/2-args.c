@@ -1,27 +1,23 @@
-#include<stdio.h>
+#include"stdio.h"
 
 /**
- * main - Entry point
+ * main - entry point
+ * @argc: num of argument
+ * @argv: array of points to argument
  *
- * Description: A C program that printsthe program name
- *
- * @argc: first argument to show the number of commands
- * argc = arg command
- *
- * @argv:second parameter
- * Return: Always 0 (Success)
+ * Return: (0) on success
 */
 
-int main(int argc, char *argv[])
+int main(int argc, char __attribute__((__unused__)) *argv[])
 {
-int count;
+int i;
 
-
-for (count = 0; count < argc; count++)
-
+i = 0;
+while (i < argc)
 {
-printf("%s\n", argv[count]);
+	printf("%s\n", argv[i]);
+i++;
 }
-
 return (0);
+
 }
