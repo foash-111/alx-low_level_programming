@@ -1,41 +1,37 @@
-#include<stdio.h>
-#include<stdlib.h>
+#include"stdio.h"
+#include"stdlib.h"
+
 /**
- * main - Entry point
+ * main - entry point
+ * @argc: num of argument
+ * @argv: array of points to argument
  *
- * Description: A C program that printsthe program name
- *
- * @argc: first argument to show the number of commands
- * argc = arg command
- *
- * @argv:second parameter
- * Return: Always int (Success)
+ * Return: (0) on success
 */
 
 int main(int argc, char *argv[])
 {
-int count, sum = 0;
 
-if (argc == 1)
+int i = 1;
+int sum = 0;
+
+while (i < argc)
 {
-printf("0\n");
+
+if (!((int) *argv[i] < 48  && (int) *argv[i] > 57))
+{
+sum += atoi(argv[i]);
+i++;
 }
 else
-{
-for (count = 1; count < argc; count++)
-{
-if (atoi(argv[count]) < 48  || atoi(argv[count]) > 57)
 {
 printf("Error\n");
+
 return (1);
 }
-else
-{
-sum += atoi(argv[count]);
 }
 
-}
 printf("%d\n", sum);
-}
+
 return (0);
 }
