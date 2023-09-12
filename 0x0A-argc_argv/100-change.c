@@ -17,6 +17,7 @@ int count;
 count = 0;
 i = atoi(argv[1]);
 
+
 if (argc != 2)
 {
 printf("Error\n");
