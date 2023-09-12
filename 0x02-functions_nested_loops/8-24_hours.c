@@ -14,11 +14,12 @@
 
 void jack_bauer(void)
 {
+int loop_24_hour, loop_60_minute;
 
-for (int loop_24_hour = 0; loop_24_hour < 24; loop_24_hour++)
+for (loop_24_hour = 0; loop_24_hour < 24; loop_24_hour++)
 {
 
-for (int loop_60_minute = 0; loop_60_minute < 60; loop_60_minute++)
+for (loop_60_minute = 0; loop_60_minute < 60; loop_60_minute++)
 {
 
 putchar(loop_24_hour / 10 + 48);
