@@ -1,4 +1,5 @@
 #include"stdio.h"
+#include"main.h"
 
 /**
 *times_table - print times table :)
@@ -19,33 +20,32 @@ void times_table(void)
 			{
 				if (result < 10)
 				{
-					putchar('0' + result);
+					_putchar('0' + result);
+					_putchar('$');
 				}
 				else
 				{
-					putchar('0' + result / 10);
-					putchar('0' + result % 10);
+					_putchar('0' + result / 10);
+					_putchar('0' + result % 10);
 				}
 			}
 			else
 			{
 				if (result < 10)
 				{
-					putchar('0' + result);
-					putchar(',');
-					putchar(' ');
-					putchar(' ');
+					_putchar('0' + result);
+					_putchar(',');
+					_putchar(' ');
+					_putchar(' ');
 				}
 				else
 				{
-					putchar('0' + result / 10);
-					putchar('0' + result % 10);
-					putchar(',');
-					putchar(' ');
-				}
-			}
-
+					_putchar('0' + result / 10);
+					_putchar('0' + result % 10);
+					_putchar(',');
+					_putchar(' ');
+				}}
 		}
-		putchar('\n');
+		_putchar('\n');
 	}
 }
