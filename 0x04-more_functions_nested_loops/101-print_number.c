@@ -1,4 +1,5 @@
 #include "stdio.h"
+#include "main.h"
 
 /**
  * print_number - print number.
@@ -10,6 +11,21 @@ void print_number(int n)
 {
 	int temp = 0, count = 0;
 
+	if (n == 0)
+{
+
+	_putchar('0');
+	_putchar('\n');
+}
+
+else
+{
+	if (n < 0)
+	{
+		_putchar('-');
+		n = -1 * n;
+	}
+
 	while (n)
 	{
 		/*987*/
@@ -20,15 +36,14 @@ void print_number(int n)
 		count++;
 	}
 
-	while (--count)/*987*/
+	while (count--)/*987*/
 	{
 		/*/7//8//9*/
-		putchar('0' + temp % 10);
+		_putchar('0' + temp % 10);
 		/*98////9//0*/
 		temp /= 10;
 
 	}
 
-	printf("%d\n", temp);
-
+}
 }
