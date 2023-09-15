@@ -7,8 +7,8 @@
  */
 int main(void)
 {
-	long int i, n1 = 1, n2 = 2;
-	long int sum = 0;
+	unsigned long int i, n1 = 1, n2 = 2;
+	unsigned long int sum = 0;
 
 	printf("1, 2, ");
 	for (i = 3; i <= 98; i++)
