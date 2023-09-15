@@ -17,8 +17,12 @@ int main(void)
 		sum = n1 + n2;
 		n1 = n2;
 		n2 = sum;
+		if (i == 50)
+		{
+		printf("%ld", sum);
+		break;
+		}
 		printf("%ld, ", sum);
-
 	}
 	putchar('\n');
 	return (0);
