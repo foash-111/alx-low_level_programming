@@ -22,4 +22,3 @@ _putchar(n + '0');
 return (n);
 }
 
-}
