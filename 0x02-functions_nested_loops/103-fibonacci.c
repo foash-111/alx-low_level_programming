@@ -24,6 +24,6 @@ int main(void)
 
 	}
 
-	printf("%d\n", result);
+	printf("%d\n", result + 2);
 	return (0);
 }
