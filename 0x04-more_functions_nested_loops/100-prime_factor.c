@@ -30,10 +30,10 @@ while (number % i == 0)
 {
 number /= i;
 larger = i;
-if (number == 1)
+if (number <= i)
 break;
 }
-if (number == 1)
+if (number <= i)
 break;
 }
 if (larger < 2)
