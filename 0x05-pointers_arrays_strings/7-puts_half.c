@@ -15,12 +15,9 @@ int count = 0;
 
 while (str[i])
 {
-if (i % 2 == 0)
-putchar(str[i]);
-
-count++;
 i++;
 }
+
 i = i / 2;
 i++;
 
