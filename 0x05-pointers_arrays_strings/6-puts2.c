@@ -1,14 +1,14 @@
 #include "main.h"
 
 /**
- * _puts2 - prints a string followed by a new line
+ * puts2 - prints a string followed by a new line
  *
  * @str: the first parameter
  *
  * Return: none
 */
 
-void _puts2(char *str)
+void puts2(char *str)
 {
 int i;
 
