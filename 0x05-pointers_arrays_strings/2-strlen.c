@@ -14,7 +14,7 @@ int count;
 
 count = 0;
 
-while (*(s + count) != '\0')
+while (s++)
 {
 count++;
 }
