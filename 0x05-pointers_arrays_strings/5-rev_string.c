@@ -36,13 +36,14 @@ return (count);
 
 void rev_string(char *s)
 {
-int i;
+int i, count = 0;
 
 i = _strlen(s);
 
 while (i > 0)
 {
-_putchar(s[i - 1]);
+s[count] = s[i - 1];
+count++;
 i--;
 }
 
