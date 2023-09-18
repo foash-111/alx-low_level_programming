@@ -19,9 +19,9 @@ while (s[count])
 count++;
 }
 if (s == NULL)
-        return (0);
-        else
-return (count);
+	return (0);
+else
+	return (count);
 }
 
 
@@ -37,17 +37,14 @@ return (count);
 void print_rev(char *s)
 {
 int i;
-int len;
 
-len = _strlen(s);
 i = _strlen(s);
 
-while (s[i])
+while (i >= 0)
 {
 _putchar(s[i - 1]);
 i--;
 }
 
-s[len - 1] = '\0';
 _putchar('\n');
 }
