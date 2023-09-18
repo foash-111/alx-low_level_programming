@@ -23,6 +23,6 @@ printf("%d, ", *(a + i));
 
 }
 
-putchar('\0');
+putchar('\n');
 
 }
