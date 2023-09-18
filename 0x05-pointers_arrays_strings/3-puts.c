@@ -16,14 +16,11 @@ int i;
 i = 0;
 count = 0;
 
-while (*(str + count) != '\0')
+while (str[i])
 {
-count++;
+_putchar(str[i])
+	i++;
 }
 
-while (i < count)
-{
-_putchar(*(str + i));
-}
 _putchar('\n');
 }
