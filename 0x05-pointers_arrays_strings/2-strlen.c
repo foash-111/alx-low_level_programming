@@ -18,7 +18,7 @@ while (s[count])
 {
 count++;
 }
-if(s == NULL)
+if (s == NULL)
 	return (0);
 	else
 return (count);
