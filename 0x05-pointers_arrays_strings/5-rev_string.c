@@ -37,19 +37,18 @@ return (count);
 void rev_string(char *s)
 {
 int i, count = 0;
-char *temp = s;
+char temp;
+
 
 i = _strlen(s);
 
-
-while (count <= _strlen(s) / 2)
+while (count <= i / 2)
 {
-temp[count] = s[i - 1];
-s[count] = temp[i - 1];
+temp = s[i - 1];
+s[i - 1] = s[count];
+s[count] = temp;
 i--;
 count++;
+
 }
-
-
-s[count] = '\0';
 }
