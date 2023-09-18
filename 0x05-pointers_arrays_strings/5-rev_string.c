@@ -42,7 +42,7 @@ char temp;
 
 i = _strlen(s);
 
-while (count <= (i / 2) + 1)
+while (count < i)
 {
 temp = s[i - 1];
 s[i - 1] = s[count];
