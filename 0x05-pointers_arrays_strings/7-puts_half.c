@@ -16,6 +16,7 @@ int count = 0;
 while (str[i])
 {
 i++;
+count++;
 }
 
 i = i / 2;
