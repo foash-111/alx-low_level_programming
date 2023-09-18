@@ -42,20 +42,14 @@ char *temp = s;
 i = _strlen(s);
 
 
-while (count < _strlen(s))
+while (count <= _strlen(s) / 2)
 {
-temp[count] = s[count];
-count++;
-}
-
-count = 0;
-
-while (i > 0)
-{
+temp[count] = s[i - 1];
 s[count] = temp[i - 1];
-count++;
 i--;
+count++;
 }
+
 
 s[count] = '\0';
 }
