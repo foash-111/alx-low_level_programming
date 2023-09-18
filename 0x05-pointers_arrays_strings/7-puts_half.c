@@ -18,10 +18,15 @@ while (str[i])
 i++;
 count++;
 }
-
+if (i % 2 == 0)
+{
+i = i / 2;
+}
+else
+{
 i = i / 2;
 i++;
-
+}
 while (i < count)
 {
 	putchar(str[i]);
