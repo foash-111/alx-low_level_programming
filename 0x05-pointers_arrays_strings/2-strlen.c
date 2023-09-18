@@ -21,5 +21,5 @@ count++;
 if(s == NULL)
 	return (0);
 	else
-return (count + 1);
+return (count);
 }
