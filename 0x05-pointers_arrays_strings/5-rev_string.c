@@ -37,12 +37,22 @@ return (count);
 void rev_string(char *s)
 {
 int i, count = 0;
+char *temp = s;
 
 i = _strlen(s);
 
+
+while (count < _strlen(s))
+{
+temp[count] = s[count];
+count++;
+}
+
+count = 0;
+
 while (i > 0)
 {
-s[count] = s[i - 1];
+s[count] = temp[i - 1];
 count++;
 i--;
 }
