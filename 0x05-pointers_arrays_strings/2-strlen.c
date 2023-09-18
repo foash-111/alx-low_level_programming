@@ -14,9 +14,12 @@ int count;
 
 count = 0;
 
-while (s++)
+while (s[count])
 {
 count++;
 }
-return (count);
+if(s == NULL)
+	return (0);
+	else
+return (count + 1);
 }

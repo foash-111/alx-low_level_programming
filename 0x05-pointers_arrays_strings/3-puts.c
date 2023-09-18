@@ -14,11 +14,10 @@ int count;
 int i;
 
 i = 0;
-count = 0;
 
 while (str[i])
 {
-_putchar(str[i])
+_putchar(str[i]);
 	i++;
 }
 
