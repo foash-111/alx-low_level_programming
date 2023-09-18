@@ -46,6 +46,4 @@ s[count] = s[i - 1];
 count++;
 i--;
 }
-s[count] = '\0';
-_putchar('\n');
 }
