@@ -9,21 +9,23 @@
 
 int _strcmp(char *s1, char *s2)
 {
-	int s1_len = 0, s2_len = 0;
+	int sum1 = 0, sum2 = 0, s1_len = 0, s2_len = 0;
 
 	while (s1[s1_len])
 	{
+		sum1 += (int)s1[s1_len];
 		s1_len++;
 	}
 	while (s2[s2_len])
 	{
+		sum2 += (int)s2[s2_len];
 		s2_len++;
 	}
 
-	if (s1_len > s2_len)
-		return (15);
-	else if (s1_len < s2_len)
-		return (-15);
+	if (sum1 > sum2)
+		return (1);
+	else if (sum1 < sum2)
+		return (-1);
 	else
 		return (0);
 }
