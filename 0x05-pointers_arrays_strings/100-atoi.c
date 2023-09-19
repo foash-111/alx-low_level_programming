@@ -19,7 +19,7 @@ int _atoi(char *s)
 {
 	int i = 0;
 	bool flag = 0;
-	int x = 0;
+	unsigned int x = 0;
 
 	while (s[i])
 	{
