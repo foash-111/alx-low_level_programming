@@ -9,7 +9,7 @@
 
 int _strcmp(char *s1, char *s2)
 {
-	int i, s1_len = 0, s2_len = 0;
+	int s1_len = 0, s2_len = 0;
 
 	while (s1[s1_len])
 	{
