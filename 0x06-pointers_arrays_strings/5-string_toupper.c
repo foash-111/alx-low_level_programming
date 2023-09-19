@@ -3,7 +3,7 @@
 /**
 * string_toupper - convert string to upper case
 * @str: pointer to the first char of the string
-* return: pointer to the string after converted
+* Return: pointer to the string after converted
 */
 
 char *string_toupper(char *str)
