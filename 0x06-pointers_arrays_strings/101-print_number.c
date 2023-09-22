@@ -1,51 +1,26 @@
-#include "stdio.h"
 #include "main.h"
 
 /**
- * print_number - print number.
- *@n: the number we want to print
- * Return: void.
- */
+  * print_number - print numbers chars
+  * @n: integer params
+  * Return: 0
+*/
 
 void print_number(int n)
 {
-	unsigned int temp = 0, count = 0;
+	unsigned int n1;
 
-	if (n == 0)
-{
+	n1 = n;
 
-	_putchar('0');
-}
-
-else
-{
 	if (n < 0)
 	{
 		_putchar('-');
-		n = -1 * n;
+		n1 = -n;
 	}
 
-	while (n)
+	if (n1 / 10 != 0)
 	{
-		/*987*/
-		/*7//70 + 8 == 78//780 + 9 == 789*/
-
-		temp = (n % 10) + (temp * 10);
-
-		/*temp *= 10;//70//780//7890 --error--*/
-
-		n = n / 10;
-		count++;
+		print_number(n1 / 10);
 	}
-
-	while (count--)/*987*/
-	{
-		/*/7//8//9*/
-		_putchar('0' + temp % 10);
-		/*98////9//0*/
-		temp /= 10;
-
-	}
-
-}
+	_putchar((n1 % 10) + '0');
 }
