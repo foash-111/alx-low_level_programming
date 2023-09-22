@@ -22,7 +22,7 @@ char *cap_string(char *str)
 		}
 
 
-			while (j < 13)
+			while (j < 12)
 			{
 				if ((i == 0 && str[i] >= 'a' && str[i] <= 'z')
 
