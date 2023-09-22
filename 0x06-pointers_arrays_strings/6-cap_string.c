@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "main.h"
 
 /**
 * cap_string - convert string to upper case
@@ -8,14 +9,33 @@
 
 char *cap_string(char *str)
 {
-int i = 0;
+	int i = 0, j;
+	char arr[] = { ' ', ',', '.', '\n', '(', ')', '{', '}', '?', '!', ';', '"' };
 
-while (str[i])
-{
-if (str[i] >= 'a' && str[i] <= 'z')
-str[i] -= 32;
-i++;
-}
-return (str);
+
+	while (str[i])
+	{
+		j = 0;
+		if (str[i + 1] == '\t')
+		{
+			str[i + 1] = ' ';
+		}
+
+
+			while (j < 13)
+			{
+				if ((i == 0 && str[i] >= 'a' && str[i] <= 'z')
+
+					||
+
+					(str[i] >= 'a' && str[i] <= 'z' && str[i - 1] == arr[j]))
+
+					str[i] -= 32;
+				j++;
+			}
+
+		i++;
+	}
+	return (str);
 
 }
