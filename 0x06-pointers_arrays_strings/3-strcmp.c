@@ -1,4 +1,4 @@
-#include"main.h"
+#include <stdio.h>
 
 /**
 * _strcmp - compare two strings with each other
@@ -9,23 +9,36 @@
 
 int _strcmp(char *s1, char *s2)
 {
-	long int  sum1 = 0, sum2 = 0, s1_len = 0, s2_len = 0;
+	int len1 = 0, len2 = 0, i = 0, max = 0, dif = 0;
 
-	while (s1[s1_len])
-	{
-		sum1 += (int)s1[s1_len] - 48;
-		s1_len++;
-	}
-	while (s2[s2_len])
-	{
-		sum2 += (int)s2[s2_len] - 48;
-		s2_len++;
-	}
+while (s1[len1])
+{
+len1++;
+}
+while (s2[len2])
+{
+len2++;
+}
+if (len1 >= len2)
+{
+max = len1;
+}
+else
+{
+max = len2;
+}
+while (i < max)
+{
+if (s1[i] == s2[i])
+{
+i++;
+}
+else
+{
+dif = s1[i] - s2[i];
+break;
+}
+}
+return (dif);
 
-	if (sum1 > sum2)
-		return (15);
-	else if (sum1 < sum2)
-		return (-15);
-	else
-		return (0);
 }
