@@ -11,7 +11,7 @@
 void print_diagsums(int *a, int size)
 {
 	int i = 0, j = 0;
-	long int sum1 = 0, sum2 = 0;
+	int sum1 = 0, sum2 = 0;
 
 	while (i < size)
 	{
@@ -27,5 +27,5 @@ void print_diagsums(int *a, int size)
 
 		i++;
 	}
-	printf("%lu, %lu\n", sum1, sum2);
+	printf("%d, %d\n", sum1, sum2);
 }
