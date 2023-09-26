@@ -35,7 +35,7 @@ j = 0;
 	j++;
 	}
 
-	if (flag == 0)
+	if (flag == 0 && haystack[temp] != '\0')
 		return (&haystack[temp]);
 
 	i++;
