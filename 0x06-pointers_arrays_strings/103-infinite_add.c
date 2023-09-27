@@ -41,7 +41,7 @@ count++;
 char *infinite_add(char *n1, char *n2, char *r, int size_r)
 {
 int len1 = 0, len2 = 0, len3 = 0, max = 0;
-int x = 0, y = 0, temp = 0, flag = 1;
+int x = 0, y = 0, temp = 0, flag = 1, j = 1;
 
 while (n1[len1])
 	len1++;
@@ -51,6 +51,7 @@ if (len1 >= len2)
 	max = len1;
 else
 	max = len2;
+
 if (max >= size_r)
 	return (0);
 while (len1 >= 0 || len2 >= 0)
@@ -67,17 +68,17 @@ r[len3] = (char)(((x + y + temp) % 10) + 48);
 temp = (x + y + temp) / 10;
 	if (temp && flag)
 	{
-		max++;
-		flag = 0;
+		max++, flag = 0;
 	}
-len1--;
-len2--;
-len3++;
+len1--, len2--, len3++;
 }
 if (max >= size_r)
 	return (0);
 rev_string(r);
 if (r[0] == '0')
-return (r + 1);
+	while (j <= max)
+	{
+		r[j - 1] = r[j], j++;
+	}
 return (r);
 }
