@@ -44,9 +44,9 @@ int len1 = 0, len2 = 0, len3 = 0, max = 0;
 int x = 0, y = 0, temp = 0, flag = 1;
 
 while (n1[len1])
-len1++;
+	len1++;
 while (n2[len2])
-len2++;
+	len2++;
 if (len1 >= len2)
 	max = len1;
 else
@@ -55,21 +55,21 @@ if (max >= size_r)
 	return (0);
 while (len1 >= 0 || len2 >= 0)
 {
-if (len1 > 0)
-	x = (int)(n1[len1 - 1] - 48);
-else
-	x = 0;
-if (len2 > 0)
-	y = (int)(n2[len2 - 1] - 48);
-else
-	y = 0;
+	if (len1 > 0)
+		x = (int)(n1[len1 - 1] - 48);
+	else
+		x = 0;
+	if (len2 > 0)
+		y = (int)(n2[len2 - 1] - 48);
+	else
+		y = 0;
 r[len3] = (char)(((x + y + temp) % 10) + 48);
 temp = (x + y + temp) / 10;
-if (temp && flag)
-{
-	max++;
-	flag = 0;
-}
+	if (temp && flag)
+	{
+		max++;
+		flag = 0;
+	}
 len1--;
 len2--;
 len3++;
@@ -77,5 +77,7 @@ len3++;
 if (max >= size_r)
 	return (0);
 rev_string(r);
+if (r[0] == '0')
+return (r + 1);
 return (r);
 }
