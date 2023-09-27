@@ -78,6 +78,5 @@ rev_string(r);
 if (r[0] == '0')
 	while (j <= max)
 		r[j - 1] = r[j], j++;
-r[max] = '\0';
 return (r);
 }
