@@ -18,7 +18,7 @@ int main(int argc, char *argv[])
 	{
 		x = atoi(argv[i]);
 
-		if (x > 0 && x <= 9)
+		if (x >= 0 && x <= 9)
 		{
 		sum += x;
 		i++;
