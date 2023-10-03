@@ -12,13 +12,22 @@
 
 int main(int argc, char *argv[])
 {
-	int i = 0, sum = 0;
+	int i = 0, sum = 0, x = 0;
 
 	while (i < argc)
 	{
+		x = atoi(argv[i]);
 
-		sum += atoi(argv[i]);
+		if (x > 0 && x <= 9)
+		{
+		sum += x;
 		i++;
+		}
+		else
+		{
+		printf("Error\n");
+		return (1);
+		}
 	}
 
 		printf("%d\n", sum);
