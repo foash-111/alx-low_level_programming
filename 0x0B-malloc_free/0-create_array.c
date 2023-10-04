@@ -22,10 +22,10 @@ char *create_array(unsigned int size, char c)
 	if (ptr == NULL)
 		return (NULL);
 
-while (i < size)
+	while (i < size)
 	{
-			ptr[i] = c;
-			i++;
+		ptr[i] = c;
+		i++;
 	}
 	return (ptr);
 }
