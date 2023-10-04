@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include<main.h>
+#include"main.h"
 
 /**
  * create_array - initialize array with malloc
@@ -11,7 +11,8 @@
 
 char *create_array(unsigned int size, char c)
 {
-	char *ptr, i = 0;
+	char *ptr;
+	unsigned int i = 0;
 
 	if (size == 0)
 		return (NULL);
@@ -21,10 +22,10 @@ char *create_array(unsigned int size, char c)
 	if (ptr == NULL)
 		return (NULL);
 
-		while (i < size)
-		{
+while (i < size)
+	{
 			ptr[i] = c;
 			i++;
-		}
+	}
 	return (ptr);
 }
