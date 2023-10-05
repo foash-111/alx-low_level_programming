@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include "main.h"
 
 /**
  * alloc_grid - allocation 2d array
@@ -17,7 +18,7 @@ int **alloc_grid(int width, int height)
 	return (NULL);
 
 
-	ptr = (int **)malloc(sizeof(int) * height);
+	ptr = (int **)malloc(sizeof(int *) * height);
 	if (ptr == NULL)
 	return (NULL);
 
@@ -25,7 +26,7 @@ int **alloc_grid(int width, int height)
 	{
 		ptr[i] = (int *)malloc(sizeof(int) * width);
 
-		if (ptr == NULL)
+		if (ptr[i] == NULL)
 		return (NULL);
 
 		i++;
