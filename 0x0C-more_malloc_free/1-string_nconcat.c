@@ -5,14 +5,15 @@
 * string_nconcat - concatinate
 * @s1:base string
 * @s2: string that we will append
-* @n: number of char concateneted
+* @n: number of chars that will be concatenated
 * Return: pointer to dublicated string
 */
 
-char *string_nconcat(char *s1, char *s2, unsigned int n);
+char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *ptr;
-	int len1 = 0, len2 = 0, i = 0;
+	unsigned int len1 = 0, len2 = 0;
+	unsigned int i = 0;
 
 	if (s1 == NULL)
 		len1 = 0;
@@ -25,7 +26,10 @@ char *string_nconcat(char *s1, char *s2, unsigned int n);
 	while (s2[len2])
 		len2++;
 
-	ptr = malloc((sizeof(char) * (len1 + len2)) + 1);
+	if (len2 < n)
+		n = len2;
+
+	ptr = malloc((sizeof(char) * (len1 + n)) + 1);
 
 	if (ptr == NULL)
 		return (NULL);
@@ -36,7 +40,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n);
 		i++;
 	}
 	i = 0;
-	while (i < len2 && i < n)
+	while (i < n)
 	{
 		ptr[len1] = s2[i];
 		i++;
