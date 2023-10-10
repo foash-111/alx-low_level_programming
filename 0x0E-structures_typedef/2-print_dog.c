@@ -26,7 +26,4 @@ void print_dog(struct dog *d)
 			printf("owner: (nil)\n");
 
 	}
-	else
-		putchar('\0');
-
 }
