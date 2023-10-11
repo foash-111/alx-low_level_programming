@@ -14,6 +14,4 @@ if (name)
 {
 (*f)(name);
 }
-else
-exit(0);
 }
