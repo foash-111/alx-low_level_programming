@@ -21,7 +21,7 @@ int main(int argc, char *argv[])
 	}
 
 	if ((ptr[0] != '+' && ptr[0] != '-' && ptr[0] != '*'
-				&& ptr[0] != '/' && ptr[0] != '%') || ( strlen(ptr) != 1))
+				&& ptr[0] != '/' && ptr[0] != '%') || (strlen(ptr) != 1))
 	{
 		printf("Error\n");
 		return (99);
