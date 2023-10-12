@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include"3-calc.h"
 #include<stdlib.h>
-
+#include<string.h>
 /**
  * main - entry point
  *
@@ -20,8 +20,8 @@ int main(int argc, char *argv[])
 		return (98);
 	}
 
-	if (ptr[0] != '+' && ptr[0] != '-' && ptr[0] != '*'
-				&& ptr[0] != '/' && ptr[0] != '%' && ptr[1] == '\0')
+	if ((ptr[0] != '+' && ptr[0] != '-' && ptr[0] != '*'
+				&& ptr[0] != '/' && ptr[0] != '%') || ( strlen(ptr) != 1))
 	{
 		printf("Error\n");
 		return (99);
