@@ -75,10 +75,10 @@ void print_all(const char * const format, ...)
 	int i = 0, j = 0;
 
 	op_t identifier[] = {
-		{'c', print_char},
-		{'s', print_string},
-		{'i', print_int},
-		{'f', print_float}
+		{"c", print_char},
+		{"s", print_string},
+		{"i", print_int},
+		{"f", print_float}
 	};
 
 	va_start(pa, format);
@@ -88,7 +88,7 @@ void print_all(const char * const format, ...)
 		j = 0;
 		while (j < 4)
 		{
-			if (identifier[j].ch == format[i])
+			if (identifier[j].ch[0] == format[i])
 				identifier[j].f(pa, format[i + 1] == '\0');
 			j++;
 		}

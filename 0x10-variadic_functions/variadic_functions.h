@@ -12,7 +12,7 @@
  */
 typedef struct operator
 {
-	char ch;
+	char *ch;
 	void (*f)(va_list, int);
 }op_t;
 int sum_them_all(const unsigned int n, ...);
