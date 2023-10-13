@@ -1,6 +1,5 @@
 #include<stdio.h>
 #include<stdarg.h>
-#include<string.h>
 #include"variadic_functions.h"
 
 /**
@@ -73,7 +72,7 @@ void print_float(va_list pa, int last)
 void print_all(const char * const format, ...)
 {
 	va_list pa;
-	int len = 0, i = 0, j = 0;
+	int i = 0, j = 0;
 
 	op_t identifier[] = {
 		{'c', print_char},
@@ -82,16 +81,15 @@ void print_all(const char * const format, ...)
 		{'f', print_float}
 	};
 
-	len = strlen(format);
 	va_start(pa, format);
 
-	while (i < len)
+	while (format[i])
 	{
 		j = 0;
 		while (j < 4)
 		{
 			if (identifier[j].ch == format[i])
-				identifier[j].f(pa, i == len - 1);
+				identifier[j].f(pa, format[i + 1] == '\0');
 			j++;
 		}
 		i++;
