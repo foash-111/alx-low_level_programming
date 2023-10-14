@@ -44,7 +44,7 @@ void print_string(char *str, va_list pa)
  */
 void print_int(char *str, va_list pa)
 {
-	printf("%s%d", str, va_arg(pa, int));
+	printf("%s%i", str, va_arg(pa, int));
 
 }
 /**
