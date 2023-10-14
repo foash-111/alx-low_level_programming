@@ -15,6 +15,7 @@ void print_all(const char * const format, ...)
 	int i = 0;
 	char *str = "";
 	char *ptr;
+
 if (format)
 {
 	va_start(pa, format);
