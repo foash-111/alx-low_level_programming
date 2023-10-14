@@ -82,7 +82,7 @@ void print_all(const char * const format, ...)
 
 	va_start(pa, format);
 
-	while (format[i] && format)
+	while (format[i] && format != NULL)
 	{
 		j = 0;
 
@@ -101,5 +101,5 @@ void print_all(const char * const format, ...)
 	}
 
 	va_end(pa);
-	printf("\n");
+	putchar('\n');
 }
