@@ -38,7 +38,8 @@ if (format != NULL)
 		printf("%s%d", str, va_arg(pa, int));
 			break;
 		default:
-			break;
+		i++;
+		continue;
 		}
 	str = ", ";
 
