@@ -16,9 +16,11 @@ void print_all(const char * const format, ...)
 	char *str = "";
 	char *ptr;
 
-if (format)
+va_start(pa, format);
+
+if (format != NULL)
 {
-	va_start(pa, format);
+
 
 	while (format[i])
 	{
