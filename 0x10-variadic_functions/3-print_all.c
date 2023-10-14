@@ -29,7 +29,7 @@ void print_string(char *str, va_list pa)
 	ptr = va_arg(pa, char *);
 	if (ptr == NULL)
 	{
-	printf("%s(nil)", str);
+	printf("%s%s", str, "(nil)");
 	return;
 	}
 	printf("%s%s", str, ptr);
