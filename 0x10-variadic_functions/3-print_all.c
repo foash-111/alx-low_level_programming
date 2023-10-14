@@ -16,11 +16,9 @@ void print_all(const char * const format, ...)
 	char *str = "";
 	char *ptr;
 
-va_start(pa, format);
-
 if (format != NULL)
 {
-
+	va_start(pa, format);
 
 	while (format[i])
 	{
@@ -31,7 +29,7 @@ if (format != NULL)
 			break;
 		case 's':
 		ptr = va_arg(pa, char *);
-		printf("%s%s", str, ptr ? ptr : NULL);
+		printf("%s%s", str, ptr ? ptr : "(nil)");
 			break;
 		case 'f':
 		printf("%s%f", str, va_arg(pa, double));
