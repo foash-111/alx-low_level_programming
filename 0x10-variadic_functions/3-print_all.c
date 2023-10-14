@@ -94,7 +94,6 @@ void print_all(const char * const format, ...)
 				identifier[j].f(str, pa);
 				str = ", ";
 			}
-			
 
 			j++;
 		}
