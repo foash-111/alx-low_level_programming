@@ -17,6 +17,6 @@ while (head)
 	head = head->next;
 	free(current);
 
-	
+
 }
 }
