@@ -19,6 +19,8 @@ if (newnode == NULL)
 return (NULL);
 else
 {
+	newnode->n = n;
+
 while (current->next)
 {
 	current = current->next;
@@ -27,5 +29,5 @@ current->next = newnode;
 newnode->next = NULL;
 
 }
-
+return (newnode);
 }
