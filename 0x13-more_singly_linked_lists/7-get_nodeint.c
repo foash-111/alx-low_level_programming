@@ -20,7 +20,7 @@ if (head == NULL)
 
 current = head;
 
-while (count <= index)
+while (current && count <= index)
 {
 	if (count == index)
 	return (current);
