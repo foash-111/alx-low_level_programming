@@ -18,8 +18,6 @@ if (head == NULL)
 	return (NULL);
 }
 
-
-
 while (current && count <= index)
 {
 	if (count == index)

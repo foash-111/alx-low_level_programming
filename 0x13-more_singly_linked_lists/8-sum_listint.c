@@ -9,26 +9,19 @@
 
 int sum_listint(listint_t *head)
 {
-listint_t *current;
-unsigned int count = 0;
-
+listint_t *current = head;
+int sum = 0;
 
 if (head == NULL)
 {
-	return (NULL);
+	return (0);
 }
 
-current = head;
-
-while (current && count <= index)
+while (current)
 {
-	if (count == index)
-	return (current);
-	else
-	{
+	sum += current->n;
+
 	current = current->next;
-	count++;
-	}
 }
-return (NULL);
+return (sum);
 }
