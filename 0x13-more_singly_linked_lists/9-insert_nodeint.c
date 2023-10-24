@@ -38,7 +38,6 @@ while (current->next && count < idx)
 	current = current->next;
 	count++;
 }
-
 	if (current && count == idx)
 	{
 		if (current->next == NULL)
@@ -47,6 +46,8 @@ while (current->next && count < idx)
 			newnode->next = current->next;
 
 	current->next = newnode;
-	}
 	return (newnode);
+	}
+	else
+	return (NULL);
 }
