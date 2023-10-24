@@ -7,9 +7,9 @@
  * Return: number of nodes
 */
 
-listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
+int sum_listint(listint_t *head)
 {
-listint_t *current = head;
+listint_t *current;
 unsigned int count = 0;
 
 
@@ -18,7 +18,7 @@ if (head == NULL)
 	return (NULL);
 }
 
-
+current = head;
 
 while (current && count <= index)
 {
