@@ -32,7 +32,7 @@ if (*head == NULL && idx == 0)
 
 current = *head;
 
-while (current->next && count < idx)
+while (current && count < idx)
 {
 
 	current = current->next;
