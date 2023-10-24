@@ -1,23 +1,20 @@
 #include"lists.h"
 
 /**
- * get_nodeint_at_index - ....
+ * sum_listint - ....
  * @head: pointer to the head
- * @index: nth node
  * Return: number of nodes
 */
 
 int sum_listint(listint_t *head)
 {
-listint_t *current;
+listint_t *current = head;
 int sum = 0;
 
 if (head == NULL)
 {
 	return (0);
 }
-
-current = head;
 
 while (current)
 {
