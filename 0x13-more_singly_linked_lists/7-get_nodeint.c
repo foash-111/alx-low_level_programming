@@ -25,9 +25,10 @@ while (count <= index)
 	if (count == index)
 	return (current);
 	else
+	{
 	current = current->next;
-
 	count++;
+	}
 }
 return (NULL);
 }
