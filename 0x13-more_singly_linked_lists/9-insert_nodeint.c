@@ -23,7 +23,7 @@ newnode->next = NULL;
 if (*head == NULL && idx == 0)
 {
 	*head = newnode;
-	return (*head);
+	return (newnode);
 }
 else
 {
