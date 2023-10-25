@@ -16,10 +16,9 @@ unsigned int count = 0;
 newnode = malloc(sizeof(listint_t));
 if (newnode == NULL)
 return (NULL);
-
 newnode->n = n;
 newnode->next = NULL;
-if (*head == NULL && idx == 1)
+if (*head == NULL && idx == 0)
 {
 	*head = newnode;
 	return (newnode);
