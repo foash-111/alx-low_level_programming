@@ -19,7 +19,6 @@ return (NULL);
 
 newnode->n = n;
 newnode->next = NULL;
-
 if (*head == NULL && idx == 0)
 {
 	*head = newnode;
