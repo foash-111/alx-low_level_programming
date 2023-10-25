@@ -16,18 +16,23 @@ unsigned int count = 0;
 newnode = malloc(sizeof(listint_t));
 if (newnode == NULL)
 return (NULL);
-
 newnode->n = n;
 newnode->next = NULL;
-if (*head == NULL && idx == 0)
+if (idx == 0)
 {
+	if (*head == NULL)
 	*head = newnode;
+	else
+	{
+		newnode->next = *head;
+		*head = newnode;
+	}
 	return (newnode);
 }
 else
 {
 current = *head;
-while (current && count <= idx)
+while (current && count < idx)
 {
 if (count == (idx - 1))
 {
@@ -35,8 +40,7 @@ if (count == (idx - 1))
 		current->next = newnode;
 	else
 	{
-		newnode->next = current->next;
-		current->next = newnode;
+		newnode->next = current->next, current->next = newnode;
 	}
 	return (newnode);
 }
