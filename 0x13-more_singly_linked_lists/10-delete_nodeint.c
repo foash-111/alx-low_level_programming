@@ -45,6 +45,7 @@ count++;
 current = current->next;
 checker = checker->next;
 }
+return (-1);
 }
 return (-1);
 }
