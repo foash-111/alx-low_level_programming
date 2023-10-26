@@ -17,7 +17,6 @@ if (head == NULL || *head == NULL)
 
 current = *head;
 checker = current;
-
 if (index == 0)
 {
 if (current->next == NULL)
@@ -29,6 +28,7 @@ return (1);
 }
 else
 {
+	current = current->next;
 	checker = current->next;
 while (current && count <= index)
 {
