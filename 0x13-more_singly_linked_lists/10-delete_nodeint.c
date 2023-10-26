@@ -29,7 +29,7 @@ return (1);
 else
 {
 	checker = current->next;
-while (current && count <= index)
+while (current->next && count <= index)
 {
 if (count == index)
 {
