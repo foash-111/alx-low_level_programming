@@ -37,7 +37,6 @@ if (checker->next == NULL)
 	current->next = NULL;
 else
 	current->next = checker->next;
-
 free(checker);
 return (1);
 }
