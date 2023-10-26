@@ -28,7 +28,6 @@ return (1);
 }
 else
 {
-	current = current->next;
 	checker = current->next;
 while (current && count <= index)
 {
