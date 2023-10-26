@@ -12,7 +12,7 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 listint_t *current, *checker;
 unsigned int count = 1;
 
-if (head == NULL)
+if (head == NULL || *head == NULL)
 	return (-1);
 
 current = *head;
@@ -38,6 +38,7 @@ if (checker->next == NULL)
 	current->next = NULL;
 else
 	current->next = checker->next;
+
 free(checker);
 return (1);
 }
