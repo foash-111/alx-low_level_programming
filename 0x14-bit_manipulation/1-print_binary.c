@@ -1,25 +1,6 @@
 #include"main.h"
 
 /**
- * power - power function
- * @osos: power passed
- * Return: result of power
-*/
-
-unsigned long int power(int osos)
-{
-	int i = 0, result = 1;
-
-	while (i < osos)
-	{
-	result *= 2;
-	i++;
-	}
-
-	return (result);
-}
-
-/**
  * print_binary - function that converts a binary number to an unsigned int
  * @n: unsigned long int n number that should converted
  * Return: (void)
@@ -27,42 +8,30 @@ unsigned long int power(int osos)
 
 void print_binary(unsigned long int n)
 {
-	unsigned long int temp = 0;
-	int os = 1;
+unsigned int mask = 1;
 
-	if (n == 0)
+if (n == 0)
+{
+_putchar('0');
+return;
+}
+
+while (mask < n)
+{
+mask <<= 1;
+}
+
+if (mask > n)
+mask >>= 1;
+
+while (mask)
+{
+	if (n & mask)
+	_putchar('1');
+	else
 	_putchar('0');
-	else if (n == 1)
-	_putchar('1');
-	else
-	{
-	while (n > power(os))
-	os++;
-if (n == power(os))
-{
-	_putchar('1');
-	os--;
-	while (os > 0)
-	{
-		_putchar('0');
-		os--;
-	}
+
+mask >>= 1;
 }
-else
-{
-os--;
-while (os >= 0)
-{
-	temp = power(os);
-	if (n >= temp)
-	{
-		_putchar('1');
-		n -= temp;
-	}
-	else
-		_putchar('0');
-	os--;
-}
-}
-}
+
 }
