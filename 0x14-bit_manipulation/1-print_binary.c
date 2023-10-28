@@ -8,7 +8,7 @@
 
 void print_binary(unsigned long int n)
 {
-unsigned long int mask = 1ul;
+unsigned long int mask = 1;
 
 if (n == 0)
 {
@@ -16,7 +16,7 @@ _putchar('0');
 return;
 }
 
-while (mask < n)
+while (mask <= n)
 {
 mask <<= 1;
 }
