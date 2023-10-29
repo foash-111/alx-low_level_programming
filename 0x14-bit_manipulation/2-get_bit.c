@@ -13,6 +13,9 @@ unsigned long int mask = 1;
 
 mask = mask << index;
 
+if (mask > n)
+return (-1);
+
 if (n & mask)
 return (1);
 else
