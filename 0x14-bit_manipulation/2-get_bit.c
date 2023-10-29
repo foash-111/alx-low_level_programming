@@ -10,7 +10,7 @@
 int get_bit(unsigned long int n, unsigned int index)
 {
 
-unsigned int mask = 1;
+unsigned long int mask = 1;
 
 mask = mask << index;
 
