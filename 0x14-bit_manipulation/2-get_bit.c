@@ -15,7 +15,9 @@ if (index > sizeof(n) * 8 - 1)
 return (-1);
 
 mask = mask << index;
-
+//111
+//010
+//010
 if (n & mask)
 return (1);
 else
