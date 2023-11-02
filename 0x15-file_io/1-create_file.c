@@ -11,10 +11,6 @@ int create_file(const char *filename, char *text_content)
 {
 	int fd, len = 0, written_chars = -1;
 
-
-while (text_content[len])
-len++;
-
 if (filename == NULL)
 return (-1);
 
@@ -25,7 +21,8 @@ return (-1);
 
 if (text_content)
 {
-
+while (text_content[len])
+len++;
 
 written_chars = write(fd, text_content, len);
 
