@@ -30,8 +30,6 @@ free(buffer);
 return (0);
 }
 
-buffer[chars_read] = '\0';
-
 chars_written = write(STDOUT_FILENO, buffer, chars_read);
 
 if (chars_written == -1 || chars_written != chars_read)
