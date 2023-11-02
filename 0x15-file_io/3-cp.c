@@ -12,7 +12,7 @@
 int main(int argc, char *argv[])
 {
 int fd_file_from, fd_file_to;
-ssize_t char_read, char_written;
+ssize_t char_read = 1, char_written;
 char buffer[1024];
 
 if (argc != 3)
@@ -29,7 +29,7 @@ if (fd_file_to == -1)
 {
 dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
 exit(99); }
-while ((char_read = read(fd_file_from, buffer, 1024)) > 0)
+while (char_read != 0)
 {
 char_read = read(fd_file_from, buffer, 1024);
 if (char_read == -1)
