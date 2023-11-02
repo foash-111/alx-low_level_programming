@@ -21,12 +21,16 @@ fd = open(filename, O_RDWR | O_CREAT | O_TRUNC, 0600);
 if (fd == -1)
 return (-1);
 
-if (text_content)
+if (text_content == NULL)
 {
+	text_content = "";
+}
+
 written_chars = write(fd, text_content, len);
 if (written_chars == -1 || written_chars != len)
 return (-1);
-}
+
+close(fd);
 
 return (1);
 
