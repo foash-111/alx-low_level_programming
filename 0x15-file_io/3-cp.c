@@ -17,7 +17,7 @@ char buffer[1024];
 
 if (argc != 3)
 {
-dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
+write(STDERR_FILENO, "Usage: cp file_from file_to\n", 28);
 exit(97); }
 fd_file_from = open(argv[1], O_RDONLY);
 if (fd_file_from == -1)
