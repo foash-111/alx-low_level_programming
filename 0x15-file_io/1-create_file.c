@@ -21,6 +21,7 @@ return (-1);
 
 if (text_content)
 {
+
 while (text_content[len])
 len++;
 
