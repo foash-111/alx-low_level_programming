@@ -10,6 +10,7 @@
 int create_file(const char *filename, char *text_content)
 {
 	int fd, len = 0, written_chars = -1;
+	char c = '\0';
 
 while (text_content[len])
 len++;
@@ -23,10 +24,13 @@ return (-1);
 
 if (text_content == NULL)
 {
-	text_content = "";
+	written_chars = write(fd, &c, 1);
+}
+else
+{
+written_chars = write(fd, text_content, len);
 }
 
-written_chars = write(fd, text_content, len);
 if (written_chars == -1 || written_chars != len)
 return (-1);
 
