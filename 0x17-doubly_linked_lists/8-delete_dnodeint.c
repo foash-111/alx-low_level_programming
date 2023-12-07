@@ -1,6 +1,6 @@
 #include"lists.h"
 /**
- * insert_dnodeint_at_index - insert_node_at_index
+ * delete_dnodeint_at_index - insert_node_at_index
  * @head: pointer points to the head
  * @index: target index .. starting from 0
  * Return: the address of new node we inserted
@@ -11,7 +11,7 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 	dlistint_t *current = NULL;
 	unsigned int count = 0;
 
-	
+
 
 	if (*head == NULL)
 	{
