@@ -46,7 +46,7 @@ while (current)
 		current->prev = new_node; }
 		return (new_node);
 	}
-	current = current->next, count++;
-}
+	current = current->next, count++; }
+free(new_node);
 return (NULL);
 }
