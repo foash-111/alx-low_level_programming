@@ -25,6 +25,8 @@ while (current)
 		if (index == 0)
 		{
 			*head = (*head)->next;
+			if (*head)
+				(*head)->prev = NULL;
 			free(current);
 		}
 		else if (current->next == NULL)
