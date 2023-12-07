@@ -72,6 +72,7 @@ void print_all(const char * const format, ...)
 	va_list pa;
 	int i = 0, j = 0;
 	char *str = "";
+// csirr
 
 	op_t identifier[] = {
 		{"c", print_char},
@@ -85,7 +86,6 @@ void print_all(const char * const format, ...)
 	while (format != NULL && format[i])
 	{
 		j = 0;
-
 
 		while (j < 4)
 		{
