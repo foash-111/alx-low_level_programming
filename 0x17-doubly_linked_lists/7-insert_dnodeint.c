@@ -34,7 +34,7 @@ while (count <= len)
 		{
 			new_node->prev = NULL, new_node->next = *h;
 			(*h)->prev = new_node, *h = new_node; }
-		else if (idx == count)
+		else if (idx == len)
 		{
 			new_node->next = NULL, new_node->prev = current;
 			current->next = new_node; }
