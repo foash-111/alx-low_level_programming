@@ -43,6 +43,8 @@ while (count <= len)
 		new_node->next = current, new_node->prev = current->prev;
 		current->prev->next = new_node, current->prev = new_node; }
 		return (new_node); }
-	current = current->next, count++; }
+	if (current->next)
+	{ current = current->next; }
+	count++; }
 free(new_node);
 return (NULL); }
