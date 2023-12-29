@@ -1,1 +1,1 @@
-read me carefully  yadd
+0x18-dynamic_libraries
