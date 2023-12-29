@@ -18,8 +18,9 @@ hash_table_t *hash_table_create(unsigned long int size)
 
 	ptr->array = malloc(size * sizeof(char *));
 	if (ptr->array == NULL)
-	free(ptr);
+	{
+		free(ptr);
 		return (NULL);
-
+	}
 	return (ptr);
 }
