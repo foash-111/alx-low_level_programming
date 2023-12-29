@@ -57,7 +57,7 @@ return (1);
 }
 else
 {
-    new_node = ht->array[index];
+    new_node->next = ht->array[index];
     ht->array[index] = new_node; 
     return (1);
 }
