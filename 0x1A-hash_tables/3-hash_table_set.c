@@ -43,23 +43,22 @@ char *_strdup(char *str)
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
 unsigned long int index = key_index((const unsigned char *)key, ht->size);
-hash_node_t *head, *new_node =  malloc(sizeof(hash_node_t));
+hash_node_t *new_node =  malloc(sizeof(hash_node_t));
 
-new_node->key = (char *)key;
+new_node->key = _strdup((char *)key);
 new_node->value = _strdup((char *)value);
 new_node->next = NULL;
 
-head = ht->array[index];
 
-if(head == NULL)
+if(ht->array[index] == NULL)
 {
-head = new_node;
+ht->array[index] = new_node;
 return (1);
 }
 else
 {
-    new_node->next = ht->array[index];
-    head = new_node; 
+    new_node = ht->array[index];
+    ht->array[index] = new_node; 
     return (1);
 }
 return (0);
