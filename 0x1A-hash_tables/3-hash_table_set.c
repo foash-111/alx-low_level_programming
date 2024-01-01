@@ -54,9 +54,6 @@ while (current)
 	if (strcmp(current->key, key) == 0)
 	{
 	free(current->value);
-	current->value = malloc(strlen(value) + 1);
-	if (!current->value)
-	return (0);
 	current->value = strdup(value);
 	return (1);
 	}
