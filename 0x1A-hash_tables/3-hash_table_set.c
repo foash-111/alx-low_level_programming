@@ -46,9 +46,8 @@ unsigned long int index = key_index((const unsigned char *)key, ht->size);
 hash_node_t *current = NULL, *new_node =  NULL;
 
 
-if (ht == NULL || key == NULL)
+if (ht == NULL || key == NULL || value == NULL)
 {
-free(new_node);
 return (0);
 }
 current = ht->array[index];
