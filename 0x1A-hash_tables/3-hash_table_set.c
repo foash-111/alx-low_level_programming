@@ -56,7 +56,7 @@ while (current)
 	current->value = malloc(strlen(value) + 1);
 	if (!current->value)
 	return (0);
-	current->value = _strdup((char *)value);
+	current->value = strdup(value);
 	return (1);
 	}
 	current = current->next;
@@ -68,8 +68,8 @@ new_node->key = malloc(strlen(key) + 1);
 new_node->value = malloc(strlen(value) + 1);
 if (!new_node->key || !new_node->value)
 return (0);
-new_node->key = _strdup((char *)key);
-new_node->value = _strdup((char *)value);
+new_node->key = strdup(key);
+new_node->value = strdup(value);
 new_node->next = NULL;
 if (ht->array[index] == NULL)
 {
