@@ -63,9 +63,8 @@ while (current)
 	current = current->next;
 }
 new_node = malloc(sizeof(hash_node_t));
-new_node->key = malloc(strlen(key) + 1);
-new_node->value = malloc(strlen(value) + 1);
-if (!new_node || !new_node->key || !new_node->value)
+
+if (!new_node)
 return (0);
 new_node->key = strdup(key);
 new_node->value = strdup(value);
