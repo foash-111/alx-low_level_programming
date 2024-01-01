@@ -56,7 +56,7 @@ while (current)
 	if (strcmp(current->key, key) == 0)
 	{
 	free(current->value);
-	current->value = NULL;
+	current->value = malloc(strlen(value) + 1);
 	current->value = _strdup((char *)value);
 	return (1);
 	}
@@ -65,7 +65,9 @@ while (current)
 new_node = malloc(sizeof(hash_node_t));
 if (new_node == NULL)
 return (0);
+new_node->key = malloc(strlen(key) + 1);
 new_node->key = _strdup((char *)key);
+new_node->value = malloc(strlen(value) + 1);
 new_node->value = _strdup((char *)value);
 new_node->next = NULL;
 if (ht->array[index] == NULL)
