@@ -55,7 +55,6 @@ while (current)
 {
 	if (strcmp(current->key, key) == 0)
 	{
-	free(new_node);
 	free(current->value);
 	current->value = NULL;
 	current->value = _strdup((char *)value);
