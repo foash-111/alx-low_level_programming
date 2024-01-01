@@ -45,10 +45,12 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 unsigned long int index = key_index((const unsigned char *)key, ht->size);
 hash_node_t *current = NULL, *new_node =  malloc(sizeof(hash_node_t));
 
+if (new_node == NULL)
+return (0);
+
 new_node->key = _strdup((char *)key);
 new_node->value = _strdup((char *)value);
 new_node->next = NULL;
-
 
 if (ht == NULL || key == NULL)
 {
