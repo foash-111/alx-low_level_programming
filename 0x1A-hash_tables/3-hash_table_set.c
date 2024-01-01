@@ -42,11 +42,12 @@ char *_strdup(char *str)
 
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
-unsigned long int index = key_index((const unsigned char *)key, ht->size);
+unsigned long int index = 0;
 hash_node_t *current = NULL, *new_node =  NULL;
 
 if (ht == NULL || value == NULL)
 return (0);
+index = key_index((const unsigned char *)key, ht->size);
 current = ht->array[index];
 while (current)
 {
