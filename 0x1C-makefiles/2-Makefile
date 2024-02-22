@@ -4,6 +4,7 @@ OBJ = $@
 NAME = school
 
 all : school
+%.c : %.o
 school: $(SRC)  main.h
 	$(CC) $(SRC) -o $(name)
 clean :
