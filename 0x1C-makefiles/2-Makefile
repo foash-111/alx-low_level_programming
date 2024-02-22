@@ -5,7 +5,7 @@ NAME = school
 
 all : school
 %.c : %.o
-school: $(SRC)  main.h
+school: main.c school.c  main.h
 	$(CC) $(SRC) -o $(name)
 clean :
 	rm -f school
