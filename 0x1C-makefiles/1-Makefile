@@ -1,0 +1,7 @@
+CC = gcc -Wall -Wextra -Werror -pedantic -std=gnu89
+SRC = *.c
+
+all : $(SRC) main.h
+	$(CC) $(SRC) -o school
+clean :
+	rm -f school
