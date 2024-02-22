@@ -1,8 +1,10 @@
 CC = gcc -Wall -Wextra
-SRC = main.c school.c
+SRC = $<
+OBJ = $@
+NAME = school
 
-all : school
+ all : school
 school: $(SRC)  main.h
-	$(CC) $(SRC) -o school
+	$(CC) $(SRC) -o $(name)
 clean :
 	rm -f school
