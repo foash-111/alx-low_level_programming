@@ -1,7 +1,7 @@
 .PHONY: all clean
 CC = gcc
-SRC = $(wildcard *.c)
-OBJ = $(wildcard *.o)
+SRC := %.c 
+OBJ := %.o
 NAME = school
 
 all: $(NAME)
@@ -9,8 +9,5 @@ all: $(NAME)
 $(NAME) : $(OBJ)
 	$(CC) $< -o $@
 
-%.o : %.c
+$(OBJ) : $(SRC)
 	$(CC) -c $<
-
-clean:
-	rm -f $(OBJ) $(NAME)
