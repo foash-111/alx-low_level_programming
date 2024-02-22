@@ -2,5 +2,5 @@
 
 void print_school(void)
 {
-	printf("school\n");
+	printf("schoolllllll\n");
 }
