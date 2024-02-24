@@ -15,7 +15,7 @@ def island_perimeter(grid):
         for m in range(len(grid[i])):
             if grid[i][m] == 1:
                 count += 1
-            if grid[i - 1][m] == 1 and grid[i][m] == 1:
+            if grid[i - 1][m] == 1 and grid[i][m] == 1 and ((i - 1) >= 0):
                 sub += 1
         if flag == 1:
             if count > 0:
@@ -35,3 +35,8 @@ def island_perimeter(grid):
         area = 0
         sub = 0
     return temp
+grid = [
+    [1, 1, 1, 1, 1],
+    [1, 1, 1, 1, 1],
+    [1, 1, 1, 1, 1]]
+print(island_perimeter(grid))
