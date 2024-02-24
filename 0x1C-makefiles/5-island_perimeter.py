@@ -10,9 +10,7 @@ def island_perimeter(grid):
     flag = 0
     sub = 0
     temp = 0
-    """grid length and width doesnt exced 100"""
-    if len(grid) == 100 or (i for i in grid) == 100:
-        return 0
+
     for i in range(len(grid)):
         for m in range(len(grid[i])):
             if grid[i][m] == 1:
@@ -37,12 +35,3 @@ def island_perimeter(grid):
         area = 0
         sub = 0
     return temp
-
-grid = [
-        [0, 1, 0, 0, 0, 0],
-        [0, 1, 1, 0, 0, 0],
-        [0, 1, 1, 0, 0, 0],
-        [0, 0, 0, 0, 0, 0],
-        [0, 0, 0, 0, 0, 0]
-    ]
-print(island_perimeter(grid))
