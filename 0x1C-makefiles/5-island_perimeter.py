@@ -17,17 +17,12 @@ def island_perimeter(grid):
                 count += 1
             if grid[i - 1][m] == 1 and grid[i][m] == 1 and ((i - 1) >= 0):
                 sub += 1
-        if flag == 1:
-            if count > 0:
-                area += count * 4
-                if area > 4:
-                    area -= ((count - 1) * 2)
-        if flag == 0:
-            if count > 0:
-                area += count * 4
-                if area > 4:
-                    area -= ((count - 1) * 2)
-                flag = 1
+
+        if count > 0:
+            area += count * 4
+            if area > 4:
+                area -= ((count - 1) * 2)
+
 
         count = 0
         temp += area
