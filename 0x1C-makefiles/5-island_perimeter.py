@@ -35,8 +35,3 @@ def island_perimeter(grid):
         area = 0
         sub = 0
     return temp
-grid = [
-    [1, 1, 1, 1, 1],
-    [1, 1, 1, 1, 1],
-    [1, 1, 1, 1, 1]]
-print(island_perimeter(grid))
