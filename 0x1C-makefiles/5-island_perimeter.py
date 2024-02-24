@@ -28,7 +28,7 @@ def island_perimeter(grid):
                 if area > 4:
                     area -= ((count - 1) * 2)
                 flag = 1
-                
+
         count = 0
         temp += area
         temp -= sub * 2
