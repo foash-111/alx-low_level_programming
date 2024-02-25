@@ -23,10 +23,15 @@ def island_perimeter(grid):
             if area > 4:
                 area -= ((count - 1) * 2)
 
-
         count = 0
         temp += area
         temp -= sub * 2
         area = 0
         sub = 0
     return temp
+grid = [[0, 1, 0, 0, 0, 1],
+        [1, 1, 0, 0, 0, 1],
+        [1, 1, 0, 1, 1, 1],
+        [0, 1, 1, 1, 0, 0],
+        [0, 0, 1, 1, 0, 0]]
+print(island_perimeter(grid))
