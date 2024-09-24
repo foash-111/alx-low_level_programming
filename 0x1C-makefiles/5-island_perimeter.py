@@ -1,37 +1,25 @@
 #!/usr/bin/python3
-"""module for porblem solving """
+"""Find island perimeter"""
 
 
 def island_perimeter(grid):
-    """ returns the perimeter of the island described in grid"""
+    """Find island perimeter"""
+    perimeter = 0
+    rows = len(grid)
+    cols = len(grid[0])
 
-    area = 0
-    count = 0
-    flag = 0
-    sub = 0
-    temp = 0
+    for i in range(rows):
+        for j in range(cols):
+            if grid[i][j] == 1:  # If it's a land cell
+                # Start by adding 4 for this cell's perimeter
+                perimeter += 4
 
-    for i in range(len(grid)):
-        for m in range(len(grid[i])):
-            if grid[i][m] == 1:
-                count += 1
-            if grid[i - 1][m] == 1 and grid[i][m] == 1 and ((i - 1) >= 0):
-                sub += 1
+                # Check the cell above (i-1, j)
+                if i > 0 and grid[i-1][j] == 1:
+                    perimeter -= 2  # Subtract 2 for the shared side
 
-        if count > 0:
-            area += count * 4
-            if area > 4:
-                area -= ((count - 1) * 2)
+                # Check the cell to the left (i, j-1)
+                if j > 0 and grid[i][j-1] == 1:
+                    perimeter -= 2  # Subtract 2 for the shared side
 
-        count = 0
-        temp += area
-        temp -= sub * 2
-        area = 0
-        sub = 0
-    return temp
-grid = [[0, 1, 0, 0, 0, 1],
-        [1, 1, 0, 0, 0, 1],
-        [1, 1, 0, 1, 1, 1],
-        [0, 1, 1, 1, 0, 0],
-        [0, 0, 1, 1, 0, 0]]
-print(island_perimeter(grid))
+    return perimeter
